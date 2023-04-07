@@ -1,0 +1,9 @@
+1- sudo nano /etc/systemd/logind.conf
+
+2- set HandleLidSwitch to ignore 
+
+3- save
+
+4- sudo systemctl restart systemd-logind
+
+

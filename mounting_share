@@ -1,0 +1,28 @@
+
+1- make shell
+
+sudo nano /user/bin/SCRIPT_NAME
+
+sudo mount -t cifs -o username<> //wind_share_ip   /mnt/your_folder
+
+
+
+2- sudo chmod +x it
+
+3- sudo nano /lib/systemd/system/SERVICE_NAME.service
+
+[Unit]
+Description=My Shell Script
+
+[Service]
+ExecStart=/usr/bin/SCRIPT_NAME
+
+[Install]
+WantedBy=multi-user.target
+
+
+4- sudo systemctl deamon-reload
+5- sudo systemctl enable SERVICE_NAME.service
+6- sudo systemctl start SERVICE_NAME.service
+
+7- sudo systemctl status SERVICE_NAME.service
