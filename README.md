@@ -2,6 +2,6 @@
 Just some instructions for ubuntu to make my life easier 
 
 # creating shortcuts:
-1- create a shell script without .sh at the end 
-2- move it into /usr/local/bin
+- create a shell script without .sh at the end 
+- then move it into /usr/local/bin
 
